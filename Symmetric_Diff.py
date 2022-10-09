@@ -1,0 +1,8 @@
+s = int(input())
+setS = set(map(int, input().split()))
+b = int(input())
+setB = set(map(int, input().split()))
+t = setB.difference(setS)
+te = setS.difference(setB)
+tes = t.union(te)
+print(*sorted(tes), sep="\n")
